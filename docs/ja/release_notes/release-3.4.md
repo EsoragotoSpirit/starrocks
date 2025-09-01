@@ -12,7 +12,7 @@ displayed_sidebar: docs
 
 以下の問題を修正しました：
 
-- Routine Load ジョブが `max_filter_ratio` をシリアライズしていませんでした。 [#61755](https://github.com/StarRocks/starrocks/pull/61755)
+- Routine Load ジョブには `max_filter_ratio` が永続化されていません。 [#61755](https://github.com/StarRocks/starrocks/pull/61755)
 - Stream Load の `now(precision)` 関数で精度パラメータが失われる問題。 [#61721](https://github.com/StarRocks/starrocks/pull/61721)
 - Audit Log において、`INSERT INTO SELECT` 文の Scan Rows 結果が正確ではありませんでした。 [#61381](https://github.com/StarRocks/starrocks/pull/61381)
 - クラスターを v3.4.5 にアップグレードした後、`fslib read iops` 指標がアップグレード前より高くなる問題。 [#61724](https://github.com/StarRocks/starrocks/pull/61724)
